@@ -19,7 +19,7 @@
     .header {
       flex-wrap: wrap; } }
 
-h1.header__logo {
+.header__logo {
   margin-right: 8.4375rem;
   padding-left: 1.0625rem;
   position: relative;
@@ -27,8 +27,9 @@ h1.header__logo {
   display: block;
   font: normal normal 2.25rem/2.8125rem "Lobster", cursive;
   text-transform: capitalize;
-  white-space: nowrap; }
-  h1.header__logo:before {
+  white-space: nowrap;
+  color: #F0F0F0; }
+  .header__logo:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -37,16 +38,16 @@ h1.header__logo {
     height: 1.0625rem;
     width: 1.0625rem;
     background-size: contain; }
-  h1.header__logo::before {
+  .header__logo::before {
     margin-right: 0.5rem;
     height: 2.6875rem;
     width: 2.6875rem;
     background-image: url("../../images/logo.svg"); }
   @media screen and (max-width: 1420px) {
-    h1.header__logo {
+    .header__logo {
       margin-right: 3.75rem; } }
   @media screen and (max-width: 1060px) {
-    h1.header__logo {
+    .header__logo {
       margin-right: 1.875rem; } }
 
 .header__balance {
@@ -70,12 +71,12 @@ h1.header__logo {
     .header__balance {
       margin-right: 1.875rem; } }
 
-nav.header__nav {
+.header__nav {
   margin-left: auto;
   flex-shrink: 0;
   align-self: stretch; }
   @media screen and (max-width: 620px) {
-    nav.header__nav {
+    .header__nav {
       margin-left: 0;
       flex-shrink: 1; } }
 
@@ -123,17 +124,8 @@ nav.header__nav {
       padding-left: 1.6875rem; }
       .header-nav__item--rus::before, .header-nav__item--eng::before, .header-nav__item--login::before {
         margin-right: 10px; }
-    .header-nav__item--rus {
-      padding-right: 1.875rem;
-      position: relative;
-      white-space: nowrap; }
-      .header-nav__item--rus::after {
-        content: '|';
-        position: absolute;
-        top: 0;
-        right: 0.625rem; }
-      .header-nav__item--rus::before {
-        background-image: url("../../images/sprite.svg#rus"); }
+    .header-nav__item--rus::before {
+      background-image: url("../../images/sprite.svg#rus"); }
     .header-nav__item--eng::before {
       background-image: url("../../images/sprite.svg#eng"); }
     .header-nav__item--login::before {

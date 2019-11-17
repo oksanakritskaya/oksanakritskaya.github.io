@@ -1,0 +1,42 @@
+html {
+  font-size: 16px; }
+  @media screen and (max-width: 1420px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (max-width: 1180px) {
+    html {
+      font-size: 14px; } }
+  @media screen and (max-width: 1060px) {
+    html {
+      font-size: 13px; } }
+  @media screen and (max-width: 960px) {
+    html {
+      font-size: 12px; } }
+  @media screen and (max-width: 880px) {
+    html {
+      font-size: 11px; } }
+  @media screen and (max-width: 700px) {
+    html {
+      font-size: 10px; } }
+
+b {
+  font-weight: bold; }
+
+svg {
+  fill: currentColor; }
+
+a {
+  text-decoration: none;
+  color: #2A7DFA; }
+  a:active, a:hover {
+    text-decoration: underline; }
+
+.delimiter {
+  padding-right: 1.875rem;
+  position: relative;
+  white-space: nowrap; }
+  .delimiter::after {
+    content: '|';
+    position: absolute;
+    top: 0;
+    right: 0.625rem; }

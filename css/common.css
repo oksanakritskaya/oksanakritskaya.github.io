@@ -27,10 +27,7 @@ svg {
 
 a {
   text-decoration: none;
-  color: #2A7DFA;
-  border-bottom: 1px solid transparent; }
-  a:active, a:hover {
-    border-color: #2A7DFA; }
+  color: #2A7DFA; }
 
 .delimiter {
   padding-right: 1.875rem;

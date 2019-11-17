@@ -124,6 +124,10 @@
       padding-left: 1.6875rem; }
       .header-nav__item--rus::before, .header-nav__item--eng::before, .header-nav__item--login::before {
         margin-right: 10px; }
+    .header-nav__item--rus, .header-nav__item--eng {
+      border-bottom: 1px solid transparent; }
+      .header-nav__item--rus:active, .header-nav__item--rus:hover, .header-nav__item--eng:active, .header-nav__item--eng:hover {
+        border-color: #2A7DFA; }
     .header-nav__item--rus::before {
       background-image: url("../../images/sprite.svg#rus"); }
     .header-nav__item--eng::before {

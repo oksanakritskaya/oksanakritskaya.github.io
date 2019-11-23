@@ -31,6 +31,9 @@ body {
 
 .main-container--opened {
   padding-left: 26.25rem; }
+  @media screen and (max-width: 630px) {
+    .main-container--opened {
+      padding-left: 8.125rem; } }
 
 b {
   font-weight: bold; }

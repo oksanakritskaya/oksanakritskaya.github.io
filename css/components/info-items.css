@@ -1,0 +1,36 @@
+.info-item {
+  padding: 1.4375rem 1.5625rem 1.4375rem 1.0625rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #F0F0F0;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem 0.25rem 0 0; }
+  .info-item .user-login {
+    color: #2A7DFA; }
+  .info-item__label {
+    margin-right: 0.625rem;
+    padding: 0.625rem 0; }
+    .info-item__label--wm, .info-item__label--qiwi, .info-item__label--ym {
+      padding-left: 3.125rem;
+      position: relative; }
+      .info-item__label--wm:before, .info-item__label--qiwi:before, .info-item__label--ym:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 2.5rem;
+        width: 2.5rem;
+        background-size: contain; }
+    .info-item__label--wm:before {
+      background-image: url("../../images/wm.png"); }
+    .info-item__label--qiwi:before {
+      background-image: url("../../images/qiwi.png"); }
+    .info-item__label--ym:before {
+      background-image: url("../../images/ym.png"); }
+  .info-item__input {
+    margin-right: 1.25rem;
+    flex-grow: 1;
+    flex-shrink: 1; }

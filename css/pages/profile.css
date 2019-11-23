@@ -1,0 +1,32 @@
+.profile {
+  padding-top: 3.75rem;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 1115px) {
+    .profile {
+      padding-top: 1.875rem; } }
+  .profile__info {
+    margin-right: 5.8125rem;
+    flex-shrink: 1;
+    flex-grow: 1; }
+    @media screen and (max-width: 1220px) {
+      .profile__info {
+        margin-right: 2.875rem; } }
+    @media screen and (max-width: 1115px) {
+      .profile__info {
+        margin-right: 1.25rem; } }
+  .profile__title {
+    margin: 2.5rem 0 1.25rem;
+    font: normal 300 1.75rem/2.0625rem "Roboto Mono", monospace;
+    font-weight: 700;
+    color: #000000; }
+  .profile__avatar {
+    flex-shrink: 0; }
+  .profile__avatar-content {
+    padding: 0.625rem;
+    margin-bottom: 0.75rem;
+    background-color: #F0F0F0;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25); }
+  .profile__photo {
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: 50%; }

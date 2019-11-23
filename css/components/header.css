@@ -4,7 +4,7 @@
   top: 0;
   right: 0;
   width: 100%;
-  height: 70px;
+  height: 4.375rem;
   display: flex;
   align-items: center;
   font: normal normal 1.125rem/1.3125rem "Roboto Mono", monospace;
@@ -13,7 +13,8 @@
   color: #F0F0F0;
   background-color: #2A7DFA; }
   .header__nav-toggle {
-    width: 130px;
+    width: 8.125rem;
+    flex-shrink: 0;
     display: flex;
     justify-content: center; }
   .header__content {
@@ -24,10 +25,10 @@
     justify-content: flex-start;
     align-items: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); }
-    @media screen and (max-width: 1420px) {
+    @media screen and (max-width: 1470px) {
       .header__content {
         padding-right: 1.25rem; } }
-    @media screen and (max-width: 1180px) {
+    @media screen and (max-width: 1220px) {
       .header__content {
         padding-right: 0.9375rem; } }
     @media screen and (max-width: 620px) {
@@ -37,7 +38,7 @@
     margin-right: 8.4375rem;
     padding-left: 1.0625rem;
     position: relative;
-    padding-left: 3.1875rem;
+    padding: 0.625rem 0 0.625rem 3.1875rem;
     display: block;
     font: normal normal 2.25rem/2.8125rem "Lobster", cursive;
     text-transform: capitalize;
@@ -57,10 +58,10 @@
       height: 2.6875rem;
       width: 2.6875rem;
       background-image: url("../../images/logo.svg"); }
-    @media screen and (max-width: 1420px) {
+    @media screen and (max-width: 1470px) {
       .header__logo {
         margin-right: 3.75rem; } }
-    @media screen and (max-width: 1060px) {
+    @media screen and (max-width: 1115px) {
       .header__logo {
         margin-right: 1.875rem; } }
   .header__balance {
@@ -80,7 +81,7 @@
       background-size: contain; }
     .header__balance::before {
       background-image: url("../../images/sprite.svg#balance"); }
-    @media screen and (max-width: 1060px) {
+    @media screen and (max-width: 1115px) {
       .header__balance {
         margin-right: 1.875rem; } }
   .header__nav {
@@ -146,30 +147,30 @@
       background-image: url("../../images/sprite.svg#eng"); }
     .header-nav__item--login::before {
       background-image: url("../../images/sprite.svg#login"); }
-    @media screen and (max-width: 1180px) {
+    @media screen and (max-width: 1220px) {
       .header-nav__item {
         padding: 1.25rem; } }
-    @media screen and (max-width: 880px) {
+    @media screen and (max-width: 900px) {
       .header-nav__item {
         padding: 0.9375rem; } }
 
 .nav-toggle {
   cursor: pointer;
-  padding: 10px 35px 16px 0; }
+  padding: 0.625rem 2.1875rem 1rem 0; }
   .nav-toggle span,
   .nav-toggle span::before,
   .nav-toggle span::after {
-    height: 3px;
-    width: 30px;
+    height: 0.1875rem;
+    width: 1.875rem;
     background: #F0F0F0;
     position: absolute;
     display: block;
     content: '';
     transition: all 500ms ease-in-out; }
   .nav-toggle span::before {
-    top: -10px; }
+    top: -0.625rem; }
   .nav-toggle span::after {
-    bottom: -10px; }
+    bottom: -0.625rem; }
   .nav-toggle.active span {
     background-color: transparent; }
   .nav-toggle.active span::before,

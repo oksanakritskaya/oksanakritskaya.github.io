@@ -1,21 +1,21 @@
 html {
   font-size: 16px; }
-  @media screen and (max-width: 1420px) {
+  @media screen and (max-width: 1470px) {
     html {
       font-size: 15px; } }
-  @media screen and (max-width: 1180px) {
+  @media screen and (max-width: 1220px) {
     html {
       font-size: 14px; } }
-  @media screen and (max-width: 1060px) {
+  @media screen and (max-width: 1115px) {
     html {
       font-size: 13px; } }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 990px) {
     html {
       font-size: 12px; } }
-  @media screen and (max-width: 880px) {
+  @media screen and (max-width: 900px) {
     html {
       font-size: 11px; } }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     html {
       font-size: 10px; } }
 
@@ -26,11 +26,11 @@ body {
   display: flex; }
 
 .main-container {
-  padding: 70px 0 0 130px;
+  padding: 4.375rem 0 0 8.125rem;
   width: 100%; }
 
 .main-container--opened {
-  padding-left: 420px; }
+  padding-left: 26.25rem; }
 
 b {
   font-weight: bold; }

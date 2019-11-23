@@ -2,15 +2,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 70px;
-  max-width: 130px;
+  padding-top: 4.375rem;
+  max-width: 8.125rem;
   width: 100%;
   min-height: 100%;
   background-color: #2A7DFA;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   transition: max-width 0.5s; }
   .main-container--opened .side-nav {
-    max-width: 420px; }
+    max-width: 26.25rem; }
   .side-nav__menu {
     display: flex;
     flex-direction: column; }

@@ -19,6 +19,19 @@ html {
     html {
       font-size: 10px; } }
 
+body, main {
+  min-height: 100vh; }
+
+body {
+  display: flex; }
+
+.main-container {
+  padding: 70px 0 0 130px;
+  width: 100%; }
+
+.main-container--opened {
+  padding-left: 420px; }
+
 b {
   font-weight: bold; }
 
@@ -28,6 +41,9 @@ svg {
 a {
   text-decoration: none;
   color: #2A7DFA; }
+
+main {
+  display: flex; }
 
 .delimiter {
   padding-right: 1.875rem;

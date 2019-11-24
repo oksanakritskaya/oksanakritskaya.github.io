@@ -1,0 +1,20 @@
+.table {
+  font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
+  font-weight: 400;
+  color: #000000; }
+  .table__head, .table__body {
+    padding: 0 1.25rem; }
+  .table__head {
+    color: #2A7DFA;
+    text-transform: uppercase; }
+  .table__foot .table__cell:first-child {
+    font-weight: 700; }
+  .table__foot .table__row {
+    border-color: transparent; }
+  .table__row {
+    border-bottom: 1px solid #2A7DFA; }
+  .table__cell {
+    padding: 1rem 0;
+    text-align: right; }
+    .table__cell:first-child {
+      text-align: left; }

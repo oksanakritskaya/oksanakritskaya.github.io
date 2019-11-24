@@ -1,0 +1,11 @@
+.statistics .field {
+  font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
+  font-weight: 400; }
+  .statistics .field__label {
+    flex-shrink: 0;
+    text-transform: uppercase; }
+
+.statistics .table {
+  width: 100%; }
+  .page__block .statistics .table {
+    margin: -1.25rem 0; }

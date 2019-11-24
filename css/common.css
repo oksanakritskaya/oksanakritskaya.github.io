@@ -68,6 +68,9 @@ main {
 .display-flex {
   display: flex; }
 
+.width-100\% {
+  width: 100%; }
+
 .user-login {
   font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
   font-weight: 500; }

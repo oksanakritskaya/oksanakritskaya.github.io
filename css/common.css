@@ -2,12 +2,6 @@ html {
   font-size: 16px; }
   @media screen and (max-width: 1470px) {
     html {
-      font-size: 15px; } }
-  @media screen and (max-width: 1220px) {
-    html {
-      font-size: 14px; } }
-  @media screen and (max-width: 1115px) {
-    html {
       font-size: 13px; } }
   @media screen and (max-width: 990px) {
     html {
@@ -58,8 +52,7 @@ body {
     align-items: center;
     background-color: #F0F0F0;
     box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
-    border-radius: 0.25rem 0.25rem 0 0;
-    overflow-x: auto; }
+    border-radius: 0.25rem 0.25rem 0 0; }
 
 .page-block {
   margin-top: -0.625rem;
@@ -130,3 +123,31 @@ main {
       height: 1.5rem;
       background-image: url("../../images/vip.png");
       background-size: contain; }
+
+.tooltip {
+  position: relative;
+  display: inline; }
+  .tooltip:after {
+    content: '';
+    position: absolute;
+    bottom: calc(100% - 6px + 2px);
+    right: 5.5px;
+    width: 0;
+    height: 0;
+    border-left: 2px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #2A7DFA; }
+  .tooltip__text {
+    padding: 10px;
+    position: absolute;
+    bottom: calc(100% + 2px);
+    left: 50%;
+    width: 19.875rem;
+    font: normal normal 0.75rem/0.875rem "Roboto Mono", monospace;
+    font-weight: 400;
+    color: #F0F0F0;
+    text-transform: none;
+    text-align: left;
+    background-color: #2A7DFA;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px; }

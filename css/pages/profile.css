@@ -1,7 +1,8 @@
 .profile {
   padding-top: 3.75rem;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  max-width: 1176px; }
   @media screen and (max-width: 1115px) {
     .profile {
       padding-top: 1.875rem; } }

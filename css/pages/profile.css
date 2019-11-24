@@ -1,14 +1,18 @@
 .profile {
   padding-top: 3.75rem;
+  display: flex;
   flex-wrap: wrap; }
   @media screen and (max-width: 1115px) {
     .profile {
       padding-top: 1.875rem; } }
+  .profile .field {
+    flex-grow: 1; }
+    .profile .field__input {
+      width: 100%; }
   .profile__info {
     padding-right: 5.8125rem;
     flex-shrink: 1;
-    flex-grow: 1;
-    width: calc(80%); }
+    flex-grow: 1; }
     @media screen and (max-width: 1220px) {
       .profile__info {
         padding-right: 2.875rem; } }
@@ -21,14 +25,17 @@
     .profile__password--opened {
       display: flex;
       flex-wrap: wrap; }
-    .profile__password .info-item__input {
+    .profile__password .field__input {
       margin-top: 0.9375rem;
+      margin-right: 1.25rem;
+      flex-grow: 1;
       max-width: calc(100% / 3); }
-      .profile__password .info-item__input:last-child {
+      .profile__password .field__input:last-child {
         margin-right: 0; }
   .profile__title {
     margin: 2.5rem 0 1.25rem;
     font: normal 300 1.75rem/2.0625rem "Roboto Mono", monospace;
+    font-weight: 400;
     font-weight: 700;
     color: #000000; }
   .profile__avatar {

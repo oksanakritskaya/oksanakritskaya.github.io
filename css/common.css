@@ -19,9 +19,6 @@ html {
     html {
       font-size: 10px; } }
 
-body, main {
-  min-height: 100vh; }
-
 body {
   display: flex; }
 
@@ -35,15 +32,52 @@ body {
     .main-container--opened {
       padding-left: 8.125rem; } }
 
-.main-content {
+.page {
   padding: 3.125rem 3.75rem 1.25rem;
   width: 100%; }
   @media screen and (max-width: 1115px) {
-    .main-content {
+    .page {
       padding: 1.875rem 1.875rem 1.25rem; } }
+  .page__title {
+    margin-bottom: 2.5rem;
+    font: normal normal 2.375rem/2.8125rem "Roboto Mono", monospace;
+    font-weight: 400;
+    font-weight: 700;
+    color: #2A7DFA; }
+  .page__sub-title {
+    margin-bottom: 2.5rem;
+    font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
+    font-weight: 400;
+    color: #2A7DFA; }
+  .page__block {
+    margin-bottom: 2.5rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F0F0;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.25rem 0.25rem 0 0;
+    overflow-x: auto; }
+
+.page-block {
+  margin-top: -0.625rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .page-block > * {
+    padding-top: 0.625rem; }
+  .page-block__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
 
 b {
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
 
 svg {
   fill: currentColor; }
@@ -73,6 +107,7 @@ main {
 
 .user-login {
   font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
+  font-weight: 400;
   font-weight: 500; }
   .user-login--vip {
     padding-right: 3.5rem;

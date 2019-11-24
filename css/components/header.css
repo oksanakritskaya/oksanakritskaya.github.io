@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   font: normal normal 1.125rem/1.3125rem "Roboto Mono", monospace;
+  font-weight: 400;
   text-align: left;
   text-transform: uppercase;
   color: #F0F0F0;
@@ -101,7 +102,9 @@
 
 .nav-toggle {
   cursor: pointer;
-  padding: 0.625rem 2.1875rem 1rem 0; }
+  padding: 0.625rem 2.1875rem 1rem 0;
+  background-color: transparent;
+  border: none; }
   .nav-toggle span,
   .nav-toggle span::before,
   .nav-toggle span::after {

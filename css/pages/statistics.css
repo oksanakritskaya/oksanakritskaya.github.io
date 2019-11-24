@@ -6,6 +6,7 @@
     text-transform: uppercase; }
 
 .statistics .table {
-  width: 100%; }
-  .page__block .statistics .table {
-    margin: -1.25rem 0; }
+  width: 100%;
+  margin: -1.25rem 0; }
+  .statistics .table__cell--hovered:hover .tooltip:after, .statistics .table__cell--hovered:hover .tooltip__text {
+    display: inline; }

@@ -108,7 +108,7 @@ main {
     width: 100%;
     border-bottom: 2px solid #2A7DFA; }
   .link-hover.delimiter:before {
-    width: calc(100% - 1.25rem); }
+    width: calc(100% - 1.875rem); }
 
 .user-login {
   font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;

@@ -15,6 +15,9 @@
     border-bottom: 1px solid #2A7DFA; }
   .table__cell {
     padding: 1rem 0;
-    text-align: right; }
-    .table__cell:first-child {
-      text-align: left; }
+    text-align: left; }
+    .table__cell--number {
+      text-align: right; }
+    .table__cell .button--icon {
+      width: 0.8125rem;
+      height: 1.0625rem; }

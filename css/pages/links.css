@@ -1,0 +1,20 @@
+.links .field {
+  flex-grow: 1; }
+  .links .field__input {
+    flex-grow: 1; }
+
+.links .page__sub-title {
+  margin-top: 1.875rem; }
+
+.links .form {
+  display: flex;
+  width: 100%; }
+  .links .form__item {
+    flex: 0 0 50%; }
+  .links .form .field:not(:last-child) {
+    margin-bottom: 1.4375rem; }
+  .links .form .button {
+    margin-left: 1.25rem; }
+
+.links .table {
+  width: 100%; }

@@ -40,6 +40,17 @@
   .side-nav-item--info {
     padding-left: 2.5rem;
     font-weight: 500; }
+  .side-nav-item--delimiter {
+    padding-top: 4.875rem;
+    position: relative; }
+    .side-nav-item--delimiter:before {
+      content: '';
+      position: absolute;
+      top: 1.9375rem;
+      left: 50%;
+      width: calc(100% - 3.875rem);
+      transform: translateX(-50%);
+      border-top: 1px solid #F0F0F0; }
   .side-nav-item__img {
     width: 1.5rem;
     height: 1.5rem; }

@@ -6,6 +6,8 @@
   @media screen and (max-width: 1115px) {
     .profile {
       padding-top: 1.875rem; } }
+  .profile .page__block {
+    margin-bottom: 0; }
   .profile .field {
     flex-grow: 1; }
     .profile .field__input {

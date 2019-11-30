@@ -98,6 +98,18 @@ main {
 .width-100\% {
   width: 100%; }
 
+.link-hover {
+  position: relative; }
+  .link-hover:hover:before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #2A7DFA; }
+  .link-hover.delimiter:before {
+    width: calc(100% - 1.25rem); }
+
 .user-login {
   font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
   font-weight: 400;

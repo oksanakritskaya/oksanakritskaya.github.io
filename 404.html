@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reduce Me</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__nav-toggle">
+        <button class="nav-toggle"><span></span></button>
+    </div>
+    <div class="header__content">
+        <a href="/" class="header-item header-item--logo">
+            <img src="images/logo.svg" alt="logo" class="header-item__logo">
+            <span class="header-item__name">Reduce Me</span>
+        </a>
+        <div class="header-item header--item--balance">
+            <svg class="icon">
+                <use xlink:href="images/sprite.svg#balance"></use>
+            </svg>
+            <b class="header-item__label">Баланс: </b>
+            <p class="header-item__value">
+                <span class="delimiter">1000 <b>rub</b></span>1000 <b>usd</b>
+            </p>
+        </div>
+        <nav class="header__nav header-item">
+            <a href="#" class="header-nav-item">
+                <svg class="icon">
+                    <use xlink:href="images/sprite.svg#support"></use>
+                </svg>
+                <span class="header-item__label">Служба поддержки</span>
+            </a>
+            <div class="header-nav-item header-nav-item--list">
+                <a href="#" class="header-item link-hover delimiter">
+                    <svg class="icon">
+                        <use xlink:href="images/sprite.svg#rus"></use>
+                    </svg>
+                    <span class="header-item__label">Рус</span>
+                </a>
+                <a href="#" class="header-item link-hover">
+                    <svg class="icon">
+                        <use xlink:href="images/sprite.svg#eng"></use>
+                    </svg>
+                    <span class="header-item__label">Eng</span>
+                </a>
+            </div>
+            <a href="#" class="header-item header-nav-item">
+                <svg class="icon">
+                    <use xlink:href="images/sprite.svg#login"></use>
+                </svg>
+                <span class="header-item__label">Выход</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <div class="page page--background undefined">
+
+</div>
+</main>
+
+</body>
+</html>
+
+<script>
+    const burger = document.body.querySelector('.nav-toggle');
+    const changePassword = document.body.querySelector('#changePassword');
+    const createLink = document.body.querySelector('#createLink');
+    const form = document.body.querySelector('.links__create-link');
+
+    burger.addEventListener('click', function () {
+        burger.classList.toggle('active');
+
+        const main = document.body.querySelector('.main-container');
+        main.classList.toggle('main-container--opened');
+    });
+
+    if(changePassword) {
+        changePassword.addEventListener('click', function () {
+            const form = document.body.querySelector('.profile__password');
+            form.classList.toggle('profile__password--opened');
+        });
+    }
+
+    if(createLink) {
+        const form = document.body.querySelector('.links__create-link');
+        const createButton = document.body.querySelector('#createButton');
+
+        createLink.addEventListener('click', function () {
+            form.classList.toggle('links__create-link--opened');
+
+            createLink.style.display = "none";
+        });
+
+        if(createButton) {
+            const crossButton = document.body.querySelector('#crossButton');
+            const currentForm = document.body.querySelector('.links__created-link');
+
+            createButton.addEventListener('click', function () {
+                currentForm.classList.toggle('links__created-link--opened');
+
+                form.style.display = "none";
+            });
+
+            if(crossButton) {
+                crossButton.addEventListener('click', function () {
+                    createLink.style.display = "flex";
+                    currentForm.style.display = "none";
+                });
+            }
+        }
+    }
+</script>

@@ -46,10 +46,12 @@ html {
 body {
   display: flex; }
 
-.main-container {
-  padding: 6.6vh 0 0 6.8vw;
+.main {
   width: 100%;
   min-height: 100vh; }
+
+.main-container {
+  padding: 6.6vh 0 0 6.8vw; }
   @media screen and (max-width: 800px) {
     .main-container {
       padding-left: 8vw; } }
@@ -75,6 +77,8 @@ body {
   @media screen and (max-width: 1115px) {
     .page {
       padding: 1.875rem 1.875rem 1.25rem; } }
+  .page--background {
+    padding: 0; }
   .page .page__wrapper {
     width: 100%;
     max-width: 1380px; }
@@ -149,9 +153,8 @@ a {
   position: relative;
   font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
   font-weight: 400;
-  text-transform: uppercase;
   color: #2A7DFA; }
-  .link:before {
+  .link:hover:before {
     content: '';
     position: absolute;
     bottom: -3px;

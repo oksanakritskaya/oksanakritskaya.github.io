@@ -4,7 +4,7 @@
   top: 0;
   right: 0;
   width: 100%;
-  height: 4.375rem;
+  height: 6.6vh;
   display: flex;
   align-items: center;
   font: normal normal 1.125rem/1.3125rem "Roboto Mono", monospace;
@@ -60,15 +60,16 @@
       .header-item--logo {
         margin-right: 1.875rem; } }
   .header-item__logo {
-    height: 2.6875rem;
-    width: 2.6875rem; }
+    padding: 0.625rem 0;
+    max-height: 43px;
+    max-width: 43px; }
   .header-item__name {
     margin-left: 0.5rem;
     font: normal normal 2.25rem/2.8125rem "Lobster", cursive;
     text-transform: capitalize;
     white-space: nowrap;
     color: #F0F0F0; }
-    @media screen and (max-width: 460px) {
+    @media screen and (max-width: 540px) {
       .header-item__name {
         display: none; } }
   .header-item--balance {
@@ -79,8 +80,8 @@
       .header-item--balance {
         margin-right: 1.875rem; } }
   .header-item__icon {
-    width: 1.0625rem;
-    height: 1.0625rem; }
+    max-width: 17px;
+    max-height: 17px; }
   .header-item__label {
     margin-left: 0.625rem;
     display: inline-block; }
@@ -92,6 +93,8 @@
 
 .header-nav-item {
   padding: 1.5625rem;
+  display: flex;
+  align-items: center;
   color: #F0F0F0; }
   .header-nav-item:hover {
     text-decoration: none;

@@ -19,17 +19,25 @@
   outline: -webkit-focus-ring-color auto 5px; }
 
 .field {
-  margin-right: 20px;
+  flex-grow: 1;
   display: flex;
   align-items: center;
   font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
   font-weight: 400;
   color: #000000; }
 
+.field__wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center; }
+
 .field__input {
   padding: 0 0.75rem;
   border: none;
+  flex-grow: 1;
+  flex-shrink: 2;
   height: 2.625rem;
+  min-width: 170px;
   background-color: #FFFFFF;
   box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem; }
@@ -61,6 +69,7 @@
 
 .field__label {
   margin-right: 1.25rem;
+  flex-shrink: 2;
   font-weight: 500; }
 
 .error {

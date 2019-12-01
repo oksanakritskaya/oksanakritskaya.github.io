@@ -10,20 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/reset.css">
-
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/common.css">
-
-    <link rel="stylesheet" href="css/components/button.css">
-    <link rel="stylesheet" href="css/components/fields.css">
-    <link rel="stylesheet" href="css/components/header.css">
-    <link rel="stylesheet" href="css/components/side-nav.css">
-    <link rel="stylesheet" href="css/components/table.css">
-
-    <link rel="stylesheet" href="css/pages/profile.css">
-    <link rel="stylesheet" href="css/pages/statistics.css">
-    <link rel="stylesheet" href="css/pages/links.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -162,41 +149,42 @@
                     <input class="field__input" type="text" id="link"
                            placeholder="Введите ссылку, которую вы хотите сократить">
                 </p>
-                <button class="button" type="submit">Создать</button>
+                <div class="page-block__item">
+                    <button class="button" type="submit">Создать</button>
+                </div>
             </form>
             <h3 class="page__sub-title">Укажите ссылки на все источники вашего трафика, чтобы избежать бана за
                 накрутку:</h3>
             <form class="form">
-                <div class="form__item">
-                    <p class="field">
+                <div class="page-block">
+                    <p class="field page-block__item">
                         <label class="field__label" for="source1">Источник трафика #1:</label>
                         <input class="field__input" type="text" id="source1" placeholder="VK группа">
                     </p>
-                    <p class="field">
+                    <p class="field page-block__item">
                         <label class="field__label" for="link1">Ссылка #1:</label>
                         <input class="field__input" type="text" id="link1" placeholder="http://vk.com">
                     </p>
-                </div>
-                <div class="form__item">
-                    <p class="field">
+                    <p class="field page-block__item">
                         <label class="field__label" for="source2">Источник трафика #2:</label>
                         <input class="field__input" type="text" id="source2" placeholder="YouTube">
                     </p>
-                    <p class="field">
+                    <p class="field page-block__item">
                         <label class="field__label" for="link2">Ссылка #2:</label>
                         <input class="field__input" type="text" id="link2" placeholder="http://youtube.ru">
                     </p>
-                </div>
-                <div class="form__item">
-                    <p class="field">
+                    <p class="field page-block__item">
                         <label class="field__label" for="source3">Источник трафика #3:</label>
                         <input class="field__input" type="text" id="source3" placeholder="Введите название источника">
                     </p>
-                    <p class="field">
+                    <div class="field page-block__item">
                         <label class="field__label" for="link3">Ссылка #3:</label>
-                        <input class="field__input field__input--with-button" type="text" id="link3" placeholder="http://">
-                        <button class="button button--sign" type="submit">+</button>
-                    </p>
+                        <div class="field__wrapper">
+                            <input class="field__input field__input--with-button" type="text" id="link3"
+                                   placeholder="http://">
+                            <button class="button button--sign" type="submit">+</button>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>

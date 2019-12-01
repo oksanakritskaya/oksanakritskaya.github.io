@@ -17,7 +17,7 @@ body {
   display: flex; }
 
 .main-container {
-  padding: 4.375rem 0 0 8.125rem;
+  padding: 4.375rem 0 0 6.8vw;
   width: 100%;
   min-height: 100vh; }
 
@@ -25,7 +25,7 @@ body {
   padding-left: 26.25rem; }
   @media screen and (max-width: 630px) {
     .main-container--opened {
-      padding-left: 8.125rem; } }
+      padding-left: 6.8vw; } }
 
 .page {
   padding: 3.125rem 3.75rem 1.25rem;

@@ -18,6 +18,15 @@
     flex-shrink: 0;
     display: flex;
     justify-content: center; }
+    @media screen and (max-width: 800px) {
+      .header__nav-toggle {
+        width: 8vw; } }
+    @media screen and (max-width: 640px) {
+      .header__nav-toggle {
+        width: 10vw; } }
+    @media screen and (max-width: 420px) {
+      .header__nav-toggle {
+        width: 12vw; } }
   .header__content {
     padding: 0 2.1875rem 0 0.9375rem;
     flex-grow: 1;

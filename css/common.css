@@ -20,12 +20,21 @@ body {
   padding: 4.375rem 0 0 6.8vw;
   width: 100%;
   min-height: 100vh; }
+  @media screen and (max-width: 800px) {
+    .main-container {
+      padding-left: 8vw; } }
+  @media screen and (max-width: 640px) {
+    .main-container {
+      padding-left: 10vw; } }
+  @media screen and (max-width: 420px) {
+    .main-container {
+      padding-left: 12vw; } }
 
 .main-container--opened {
-  padding-left: 26.25rem; }
-  @media screen and (max-width: 630px) {
-    .main-container--opened {
-      padding-left: 6.8vw; } }
+  padding-left: 26.25rem;
+  /*@media screen and (max-width: $media-icons-l) {
+    padding-left: $nav-width;
+  }*/ }
 
 .page {
   padding: 3.125rem 3.75rem 1.25rem;

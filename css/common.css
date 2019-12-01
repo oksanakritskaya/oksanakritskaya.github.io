@@ -1,3 +1,33 @@
+.width-10\% {
+  width: 10%; }
+
+.width-20\% {
+  width: 20%; }
+
+.width-30\% {
+  width: 30%; }
+
+.width-40\% {
+  width: 40%; }
+
+.width-50\% {
+  width: 50%; }
+
+.width-60\% {
+  width: 60%; }
+
+.width-70\% {
+  width: 70%; }
+
+.width-80\% {
+  width: 80%; }
+
+.width-90\% {
+  width: 90%; }
+
+.width-100\% {
+  width: 100%; }
+
 html {
   font-size: 16px; }
   @media screen and (max-width: 1470px) {
@@ -45,6 +75,9 @@ body {
   @media screen and (max-width: 1115px) {
     .page {
       padding: 1.875rem 1.875rem 1.25rem; } }
+  .page .page__wrapper {
+    width: 100%;
+    max-width: 1380px; }
   .page__title {
     margin-bottom: 2.5rem;
     font: normal normal 2.375rem/2.8125rem "Roboto Mono", monospace;
@@ -183,3 +216,10 @@ main {
     background-color: #2A7DFA;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px; }
+
+.text-ellipsis {
+  display: inline-block;
+  max-width: calc(99% - 17px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }

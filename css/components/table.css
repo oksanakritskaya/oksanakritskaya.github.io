@@ -2,6 +2,9 @@
   font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
   font-weight: 400;
   color: #000000; }
+  .statistics .table, .links .table {
+    width: 100%;
+    margin: -1.25rem 0; }
   .table__head, .table__body {
     padding: 0 1.25rem; }
   .table__head {
@@ -15,7 +18,8 @@
     border-bottom: 1px solid #2A7DFA; }
   .table__cell {
     padding: 1rem 0.375rem;
-    text-align: left; }
+    text-align: left;
+    max-width: 0; }
     .table__cell--number {
       text-align: right; }
     .table__cell .button--icon {

@@ -423,6 +423,8 @@ body {
     font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
     font-weight: 400;
     color: #2A7DFA; }
+    .page__sub-title--black {
+      color: #000000; }
   .page__block {
     margin-bottom: 2.5rem;
     padding: 1.25rem;
@@ -442,6 +444,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
+  .page-block--start {
+    align-items: flex-start; }
   .page-block > * {
     padding-top: 0.625rem;
     padding-left: 1.25rem; }
@@ -449,6 +453,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center; }
+    .page-block__item--column {
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: flex-start; }
+    .page-block__item--grow {
+      flex-grow: 1; }
 
 b {
   font-weight: bold;
@@ -464,11 +474,13 @@ svg {
 main {
   display: flex; }
 
+a {
+  text-decoration: none; }
+
 .link {
   position: relative;
   font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
   font-weight: 400;
-  text-decoration: none;
   text-transform: uppercase;
   color: #2A7DFA; }
   .link:before {
@@ -512,6 +524,14 @@ main {
 .width-100\% {
   width: 100%; }
 
+.icon {
+  max-width: 17px;
+  max-height: 17px;
+  width: 100%;
+  height: 100%; }
+  .icon--round {
+    border-radius: 50%; }
+
 .user-login {
   font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
   font-weight: 400;
@@ -519,6 +539,7 @@ main {
   .user-login--vip {
     padding-right: 3.5rem;
     position: relative;
+    display: inline-block;
     height: 1.5rem; }
     .user-login--vip:before, .user-login--vip:after {
       content: '';
@@ -772,9 +793,6 @@ main {
     @media screen and (max-width: 1115px) {
       .header-item--balance {
         margin-right: 1.875rem; } }
-  .header-item__icon {
-    max-width: 17px;
-    max-height: 17px; }
   .header-item__label {
     margin-left: 0.625rem;
     display: inline-block; }
@@ -941,12 +959,12 @@ main {
       font-weight: 500; }
 
 .table {
+  margin: -1.25rem 0;
+  width: 100%;
+  min-width: 18.75rem;
   font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
   font-weight: 400;
   color: #000000; }
-  .statistics .table, .links .table {
-    width: 100%;
-    margin: -1.25rem 0; }
   .table__head, .table__body {
     padding: 0 1.25rem; }
   .table__head {
@@ -954,8 +972,13 @@ main {
     text-transform: uppercase; }
   .links .table__body .table__row:last-child {
     border-color: transparent; }
+  .rates .table__body .table__cell {
+    text-transform: uppercase; }
   .table__foot .table__cell:first-child {
     font-weight: 700; }
+    .rates .table__foot .table__cell:first-child {
+      font-weight: normal;
+      text-transform: uppercase; }
   .table__foot .table__row {
     border-color: transparent; }
   .table__row {
@@ -984,12 +1007,13 @@ main {
       .profile .page__wrapper {
         flex-direction: column;
         justify-content: flex-start; } }
+  .profile .page-block {
+    margin-left: -5.8125rem; }
+  .profile .page-block__item {
+    padding-left: 5.8125rem; }
   .profile .page__block {
-    margin-bottom: 0; }
-  .profile .field {
-    flex-grow: 1; }
-    .profile .field__input {
-      width: 100%; }
+    margin-bottom: 0;
+    width: 100%; }
   .profile__info {
     flex-shrink: 1;
     flex-basis: 75%; }
@@ -1029,6 +1053,7 @@ main {
     border-radius: 50%; }
 
 .statistics .field {
+  flex-grow: 0;
   font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
   font-weight: 400; }
   .statistics .field__label {
@@ -1075,3 +1100,16 @@ main {
       max-width: 476px; }
   .links .form .button {
     margin-left: 1.25rem; }
+
+.rates .page-block {
+  margin-left: -2.5rem; }
+
+.rates .page-block__item {
+  padding-left: 2.5rem; }
+
+.rates .page__sub-title {
+  margin: 0 0 1.375rem;
+  font-weight: 700; }
+
+.rates .page__block {
+  width: 100%; }

@@ -1,0 +1,10 @@
+.statistics .field {
+  flex-grow: 0;
+  font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
+  font-weight: 400; }
+  .statistics .field__label {
+    flex-shrink: 0;
+    text-transform: uppercase; }
+
+.statistics .table__cell--hovered:hover .tooltip:after, .statistics .table__cell--hovered:hover .tooltip__text {
+  display: inline; }

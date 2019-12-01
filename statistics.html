@@ -24,7 +24,7 @@
             <span class="header-item__name">Reduce Me</span>
         </a>
         <div class="header-item header--item--balance">
-            <svg class="header-item__icon">
+            <svg class="icon">
                 <use xlink:href="images/sprite.svg#balance"></use>
             </svg>
             <b class="header-item__label">Баланс: </b>
@@ -34,27 +34,27 @@
         </div>
         <nav class="header__nav header-item">
             <a href="#" class="header-nav-item">
-                <svg class="header-item__icon">
+                <svg class="icon">
                     <use xlink:href="images/sprite.svg#support"></use>
                 </svg>
                 <span class="header-item__label">Служба поддержки</span>
             </a>
             <div class="header-nav-item header-nav-item--list">
                 <a href="#" class="header-item link-hover delimiter">
-                    <svg class="header-item__icon">
+                    <svg class="icon">
                         <use xlink:href="images/sprite.svg#rus"></use>
                     </svg>
                     <span class="header-item__label">Рус</span>
                 </a>
                 <a href="#" class="header-item link-hover">
-                    <svg class="header-item__icon">
+                    <svg class="icon">
                         <use xlink:href="images/sprite.svg#eng"></use>
                     </svg>
                     <span class="header-item__label">Eng</span>
                 </a>
             </div>
             <a href="#" class="header-item header-nav-item">
-                <svg class="header-item__icon">
+                <svg class="icon">
                     <use xlink:href="images/sprite.svg#login"></use>
                 </svg>
                 <span class="header-item__label">Выход</span>
@@ -82,7 +82,7 @@
             </svg>
             <span class="side-nav-item__label">Мои ссылки</span>
         </a>
-        <a href="#" class="side-nav-item">
+        <a href="rates.html" class="side-nav-item">
             <svg class="side-nav-item__img">
                 <use xlink:href="images/sprite.svg#rates"></use>
             </svg>
@@ -142,18 +142,20 @@
     <div class="statistics page">
     <h2 class="page__title">Статистика</h2>
     <form class="page__block">
-        <div class="page-block__item page-block__item--wrapped">
-            <p class="field">
-                <label class="field__label" for="from">Статистика за период с:</label>
-                <input class="field__input field__input--date" type="date" id="from" placeholder="ll">
-            </p>
-            <p class="field">
-                <label class="field__label" for="to">по:</label>
-                <input class="field__input field__input--date" type="date" id="to">
-            </p>
-        </div>
-        <div class="page-block__item">
-            <button class="button" type="submit">Вывести статистика за период</button>
+        <div class="page-block">
+            <div class="page-block__item page-block__item--grow">
+                <p class="field">
+                    <label class="field__label" for="from">Статистика за период с:</label>
+                    <input class="field__input field__input--date" type="date" id="from" placeholder="ll">
+                </p>
+                <p class="field">
+                    <label class="field__label" for="to">по:</label>
+                    <input class="field__input field__input--date" type="date" id="to">
+                </p>
+            </div>
+            <div class="page-block__item">
+                <button class="button" type="submit">Вывести статистика за период</button>
+            </div>
         </div>
     </form>
 

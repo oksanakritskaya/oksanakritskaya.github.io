@@ -79,9 +79,6 @@
     @media screen and (max-width: 1115px) {
       .header-item--balance {
         margin-right: 1.875rem; } }
-  .header-item__icon {
-    max-width: 17px;
-    max-height: 17px; }
   .header-item__label {
     margin-left: 0.625rem;
     display: inline-block; }

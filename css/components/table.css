@@ -1,17 +1,24 @@
 .table {
+  margin: -1.25rem 0;
+  width: 100%;
+  min-width: 18.75rem;
   font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
   font-weight: 400;
   color: #000000; }
-  .statistics .table, .links .table {
-    width: 100%;
-    margin: -1.25rem 0; }
   .table__head, .table__body {
     padding: 0 1.25rem; }
   .table__head {
     color: #2A7DFA;
     text-transform: uppercase; }
+  .links .table__body .table__row:last-child {
+    border-color: transparent; }
+  .rates .table__body .table__cell {
+    text-transform: uppercase; }
   .table__foot .table__cell:first-child {
     font-weight: 700; }
+    .rates .table__foot .table__cell:first-child {
+      font-weight: normal;
+      text-transform: uppercase; }
   .table__foot .table__row {
     border-color: transparent; }
   .table__row {

@@ -12,12 +12,13 @@
       .profile .page__wrapper {
         flex-direction: column;
         justify-content: flex-start; } }
+  .profile .page-block {
+    margin-left: -5.8125rem; }
+  .profile .page-block__item {
+    padding-left: 5.8125rem; }
   .profile .page__block {
-    margin-bottom: 0; }
-  .profile .field {
-    flex-grow: 1; }
-    .profile .field__input {
-      width: 100%; }
+    margin-bottom: 0;
+    width: 100%; }
   .profile__info {
     flex-shrink: 1;
     flex-basis: 75%; }

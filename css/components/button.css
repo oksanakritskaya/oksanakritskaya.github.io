@@ -22,3 +22,9 @@
     box-shadow: none; }
     .button--icon:hover, .button--icon:active {
       background-color: transparent; }
+  .page__block .button--cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px; }

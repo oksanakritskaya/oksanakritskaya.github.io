@@ -93,6 +93,7 @@
 
 .header-nav-item {
   padding: 1.5625rem;
+  height: 100%;
   display: flex;
   align-items: center;
   color: #F0F0F0; }

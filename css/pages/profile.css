@@ -1,11 +1,17 @@
 .profile {
-  padding-top: 3.75rem;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1176px; }
+  padding-top: 3.75rem; }
   @media screen and (max-width: 1115px) {
     .profile {
       padding-top: 1.875rem; } }
+  .profile__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1176px; }
+    @media screen and (max-width: 640px) {
+      .profile__wrapper {
+        flex-direction: column;
+        justify-content: flex-start; } }
   .profile .page__block {
     margin-bottom: 0; }
   .profile .field {
@@ -13,26 +19,22 @@
     .profile .field__input {
       width: 100%; }
   .profile__info {
-    padding-right: 5.8125rem;
     flex-shrink: 1;
-    flex-grow: 1; }
-    @media screen and (max-width: 1220px) {
+    flex-basis: 75%; }
+    @media screen and (max-width: 640px) {
       .profile__info {
-        padding-right: 2.875rem; } }
-    @media screen and (max-width: 1115px) {
-      .profile__info {
-        padding-right: 1.25rem; } }
+        flex-basis: 100%; } }
   .profile__password {
     display: none;
-    width: 100%; }
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between; }
     .profile__password--opened {
-      display: flex;
-      flex-wrap: wrap; }
+      display: flex; }
     .profile__password .field__input {
       margin-top: 0.9375rem;
-      margin-right: 1.25rem;
       flex-grow: 1;
-      max-width: calc(100% / 3); }
+      max-width: 264px; }
       .profile__password .field__input:last-child {
         margin-right: 0; }
   .profile__title {
@@ -42,7 +44,8 @@
     font-weight: 700;
     color: #000000; }
   .profile__avatar {
-    flex-shrink: 0; }
+    flex-shrink: 0;
+    max-width: 202px; }
   .profile__avatar-content {
     padding: 0.625rem;
     margin-bottom: 0.75rem;

@@ -133,7 +133,8 @@ main {
   font-weight: 500; }
   .user-login--vip {
     padding-right: 3.5rem;
-    position: relative; }
+    position: relative;
+    height: 1.5rem; }
     .user-login--vip:before, .user-login--vip:after {
       content: '';
       position: absolute;

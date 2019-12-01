@@ -31,10 +31,13 @@ body {
       padding-left: 12vw; } }
 
 .main-container--opened {
-  padding-left: 26.25rem;
-  /*@media screen and (max-width: $media-icons-l) {
-    padding-left: $nav-width;
-  }*/ }
+  padding-left: 21.964vw; }
+  @media screen and (max-width: 800px) {
+    .main-container--opened {
+      padding-left: 25.84vw; } }
+  @media screen and (max-width: 640px) {
+    .main-container--opened {
+      padding-left: 6.8vw; } }
 
 .page {
   padding: 3.125rem 3.75rem 1.25rem;
@@ -81,6 +84,10 @@ body {
 b {
   font-weight: bold;
   text-transform: uppercase; }
+
+svg, img {
+  height: 100%;
+  width: 100%; }
 
 svg {
   fill: currentColor; }

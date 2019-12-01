@@ -9,7 +9,7 @@
   height: 100%;
   background-color: #2A7DFA;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  transition: max-width 0.5s; }
+  transition: width 0.5s; }
   @media screen and (max-width: 800px) {
     .side-nav {
       width: 8vw; } }
@@ -20,26 +20,37 @@
     .side-nav {
       width: 12vw; } }
   .main-container--opened .side-nav {
-    max-width: 26.25rem; }
-    @media screen and (max-width: 630px) {
+    width: 21.964vw; }
+    @media screen and (max-width: 800px) {
       .main-container--opened .side-nav {
-        max-width: 100%; } }
+        width: 25.84vw; } }
+    @media screen and (max-width: 640px) {
+      .main-container--opened .side-nav {
+        width: 100%; } }
   .side-nav__menu {
+    padding-top: 0.625rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100%;
     overflow-y: auto; }
+    .main-container--opened .side-nav__menu {
+      align-items: flex-start; }
 
 .side-nav-item {
   padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
   font-weight: 400;
   color: #F0F0F0; }
   .main-container--opened .side-nav-item {
-    min-width: 16.875rem; }
+    padding-left: 12.62%;
+    padding-right: 1rem;
+    min-width: 16.875rem;
+    justify-content: flex-start; }
   .side-nav-item:not(.side-nav-item--info) {
     color: #F0F0F0; }
     .side-nav-item:not(.side-nav-item--info):hover {
@@ -48,6 +59,8 @@
       background-color: #F0F0F0; }
   .side-nav-item--info {
     font-weight: 500; }
+    .main-container--opened .side-nav-item--info {
+      padding-left: 9.52%; }
   .side-nav-item--delimiter {
     padding-top: 4.875rem;
     position: relative; }
@@ -63,20 +76,20 @@
         .side-nav-item--delimiter:before {
           width: calc(100% - 2.5rem); } }
   .side-nav-item__img {
-    width: 24px;
-    height: 24px; }
+    max-width: 24px;
+    max-height: 24px; }
     @media screen and (max-width: 800px) {
       .side-nav-item__img {
-        width: 20px;
-        height: 20px; } }
+        max-width: 20px;
+        max-height: 20px; } }
     .side-nav-item--info .side-nav-item__img {
-      width: 50px;
-      height: 50px;
+      max-width: 50px;
+      max-height: 50px;
       border-radius: 50%; }
       @media screen and (max-width: 800px) {
         .side-nav-item--info .side-nav-item__img {
-          width: 46px;
-          height: 46px; } }
+          max-width: 46px;
+          max-height: 46px; } }
   .side-nav-item__label {
     margin-left: 1.5rem;
     display: none; }

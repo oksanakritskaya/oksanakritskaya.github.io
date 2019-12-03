@@ -774,6 +774,24 @@ a {
   margin-right: 1.25rem;
   flex-shrink: 2;
   font-weight: 500; }
+  .field__label--wm, .field__label--qiwi, .field__label--ym {
+    padding-left: 3.125rem;
+    position: relative; }
+    .field__label--wm:before, .field__label--qiwi:before, .field__label--ym:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      height: 2.5rem;
+      width: 2.5rem; }
+  .field__label--wm:before {
+    background-image: url("../../images/wm.png"); }
+  .field__label--qiwi:before {
+    background-image: url("../../images/qiwi.png"); }
+  .field__label--ym:before {
+    background-image: url("../../images/ym.png"); }
 
 .error, .success {
   font-family: "Roboto Mono", monospace;

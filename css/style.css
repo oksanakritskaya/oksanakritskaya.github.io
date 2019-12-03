@@ -558,6 +558,35 @@ a {
   .icon--round {
     border-radius: 50%; }
 
+.icon-pseudo {
+  padding-left: 3.125rem;
+  position: relative; }
+  .icon-pseudo:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 2.5rem;
+    width: 2.5rem;
+    background-size: cover; }
+  .icon-pseudo--wm:before {
+    background-image: url("../../images/wm.png"); }
+  .icon-pseudo--qiwi:before {
+    background-image: url("../../images/qiwi.png"); }
+  .icon-pseudo--ym:before {
+    background-image: url("../../images/ym.png"); }
+
+.status--process {
+  color: #E3B100; }
+
+.status--success {
+  color: #039434; }
+
+.status--error {
+  color: #DE0000; }
+
 .user-login {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
@@ -695,6 +724,22 @@ a {
   font-size: 1.5rem;
   line-height: 1.75rem;
   color: #000000; }
+  .field--empty .field__label {
+    margin-right: 0;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    flex-shrink: 1; }
+    .field--empty .field__label:after {
+      content: 'не заполнен';
+      padding-left: 0.625rem;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      color: #2A7DFA;
+      white-space: nowrap; }
+  .field--empty .field__input {
+    display: none; }
 
 .field__wrapper {
   -webkit-box-flex: 1;
@@ -753,59 +798,11 @@ a {
     max-width: 16.5625rem;
     width: 100%;
     height: 3rem; }
-  .field__input--empty .field__label {
-    margin-right: 0;
-    -webkit-box-flex: 1;
-            flex-grow: 1;
-    flex-shrink: 1; }
-    .field__input--empty .field__label:after {
-      content: 'не заполнен';
-      padding-left: 0.625rem;
-      font-family: "Roboto Mono", monospace;
-      font-weight: 400;
-      font-size: 1.5rem;
-      line-height: 1.75rem;
-      color: #2A7DFA;
-      white-space: nowrap; }
-  .field__input--empty .field__input {
-    display: none; }
 
 .field__label {
   margin-right: 1.25rem;
   flex-shrink: 2;
   font-weight: 500; }
-  .field__label--wm, .field__label--qiwi, .field__label--ym {
-    padding-left: 3.125rem;
-    position: relative; }
-    .field__label--wm:before, .field__label--qiwi:before, .field__label--ym:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      height: 2.5rem;
-      width: 2.5rem;
-      background-size: cover; }
-  .field__label--wm:before {
-    background-image: url("../../images/wm.png"); }
-  .field__label--qiwi:before {
-    background-image: url("../../images/qiwi.png"); }
-  .field__label--ym:before {
-    background-image: url("../../images/ym.png"); }
-
-.error, .success {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  white-space: nowrap; }
-
-.error {
-  color: #DE0000; }
-
-.success {
-  color: #039434; }
 
 .header {
   z-index: 2;
@@ -1101,13 +1098,13 @@ a {
   font-size: 1rem;
   line-height: 1.1875rem;
   color: #000000; }
+  .table--without-total .table__body .table__row:last-child {
+    border-color: transparent; }
   .table__head, .table__body {
     padding: 0 1.25rem; }
   .table__head {
     color: #2A7DFA;
     text-transform: uppercase; }
-  .links .table__body .table__row:last-child {
-    border-color: transparent; }
   .rates .table__body .table__cell {
     text-transform: uppercase; }
   .table__foot .table__cell:first-child {
@@ -1168,7 +1165,12 @@ a {
   background-size: contain; }
 
 .profile {
-  padding-top: 3.75rem; }
+  padding-top: 3.75rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #000000; }
   @media screen and (max-width: 1115px) {
     .profile {
       padding-top: 1.875rem; } }

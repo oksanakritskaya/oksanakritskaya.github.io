@@ -120,7 +120,8 @@
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
       height: 2.5rem;
-      width: 2.5rem; }
+      width: 2.5rem;
+      background-size: cover; }
   .field__label--wm:before {
     background-image: url("../../images/wm.png"); }
   .field__label--qiwi:before {

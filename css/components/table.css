@@ -7,13 +7,13 @@
   font-size: 1rem;
   line-height: 1.1875rem;
   color: #000000; }
+  .table--without-total .table__body .table__row:last-child {
+    border-color: transparent; }
   .table__head, .table__body {
     padding: 0 1.25rem; }
   .table__head {
     color: #2A7DFA;
     text-transform: uppercase; }
-  .links .table__body .table__row:last-child {
-    border-color: transparent; }
   .rates .table__body .table__cell {
     text-transform: uppercase; }
   .table__foot .table__cell:first-child {

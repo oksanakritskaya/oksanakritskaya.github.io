@@ -139,8 +139,45 @@
     </nav>
 </div>
 
-    <div class="page">
+    <div class="payouts page">
     <h2 class="page__title">Выплаты</h2>
+    <div class="test"></div>
+
+    <form class="payouts__form page__block">
+        <div class="page-block page-block--end">
+            <div class="page-block__item page-block__item--grow">
+                <div class="page-block page-block--end">
+                    <p class="page-block__item field field--column">
+                        <label class="field__label" for="purse">Выберете кошелек:</label>
+                        <select id="purse" class="field__input select width-100%">
+                            <option value="qiwi">Qiwi</option>
+                            <option value="wm">Webmoney</option>
+                            <option value="ym">YandexMoney</option>
+                        </select>
+                    </p>
+                    <div class="page-block__item">
+                        <button class="button button--white" type="submit">RUB</button>
+                    </div>
+                    <p class="page-block__item field field--column">
+                        <label class="field__label" for="sum">Введите сумму (доступно до 1000 RUB):</label>
+                        <input class="field__input width-100%" type="number" id="sum" placeholder="1000">
+                    </p>
+                </div>
+            </div>
+            <div class="page-block__item">
+                <button id="payoutsButton" class="button" type="button">Заказать новую выплату</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="payouts__note note page__block">
+        <button id="payoutsCloseButton" type="button" class="button button--icon button--cross">
+            <svg class="icon">
+                <use xlink:href="images/sprite.svg#cross"></use>
+            </svg>
+        </button>
+        <p>Выплата заказана. Ожидайте. Следить за обработкой Вы можете в таблице ниже.</p>
+    </div>
 
     <div class="page__block">
         <table class="table table--without-total">
@@ -221,6 +258,7 @@
     const changePassword = document.body.querySelector('#changePassword');
     const createLink = document.body.querySelector('#createLink');
     const form = document.body.querySelector('.links__create-link');
+    const payoutsButton = document.body.querySelector('#payoutsButton');
 
     burger.addEventListener('click', function () {
         burger.classList.toggle('active');
@@ -232,7 +270,7 @@
     if(changePassword) {
         changePassword.addEventListener('click', function () {
             const form = document.body.querySelector('.profile__password');
-            form.classList.toggle('profile__password--opened');
+            form.classList.toggle('note--opened');
         });
     }
 
@@ -241,7 +279,7 @@
         const createButton = document.body.querySelector('#createButton');
 
         createLink.addEventListener('click', function () {
-            form.classList.toggle('links__create-link--opened');
+            form.classList.toggle('note--opened');
 
             createLink.style.display = "none";
         });
@@ -251,7 +289,7 @@
             const currentForm = document.body.querySelector('.links__created-link');
 
             createButton.addEventListener('click', function () {
-                currentForm.classList.toggle('links__created-link--opened');
+                currentForm.classList.toggle('note--opened');
 
                 form.style.display = "none";
             });
@@ -263,5 +301,22 @@
                 });
             }
         }
+    }
+
+    if(payoutsButton) {
+        const form = document.body.querySelector('.payouts__form');
+        const note = document.body.querySelector('.payouts__note');
+
+        payoutsButton.addEventListener('click', function () {
+            note.classList.toggle('note--opened');
+            form.style.display = "none";
+        });
+
+        const payoutsCloseButton = document.body.querySelector('#payoutsCloseButton');
+
+        payoutsCloseButton.addEventListener('click', function () {
+            note.classList.toggle('note--opened');
+            form.style.display = "flex";
+        });
     }
 </script>

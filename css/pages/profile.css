@@ -1,5 +1,10 @@
 .profile {
-  padding-top: 3.75rem; }
+  padding-top: 3.75rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #000000; }
   @media screen and (max-width: 1115px) {
     .profile {
       padding-top: 1.875rem; } }

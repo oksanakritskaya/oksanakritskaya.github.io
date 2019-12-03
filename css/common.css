@@ -232,6 +232,35 @@ a {
   .icon--round {
     border-radius: 50%; }
 
+.icon-pseudo {
+  padding-left: 3.125rem;
+  position: relative; }
+  .icon-pseudo:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 2.5rem;
+    width: 2.5rem;
+    background-size: cover; }
+  .icon-pseudo--wm:before {
+    background-image: url("../../images/wm.png"); }
+  .icon-pseudo--qiwi:before {
+    background-image: url("../../images/qiwi.png"); }
+  .icon-pseudo--ym:before {
+    background-image: url("../../images/ym.png"); }
+
+.status--process {
+  color: #E3B100; }
+
+.status--success {
+  color: #039434; }
+
+.status--error {
+  color: #DE0000; }
+
 .user-login {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;

@@ -1,5 +1,19 @@
-.list__item {
-  padding-left: 10px;
-  font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
-  font-weight: 400;
-  font-weight: 300; }
+.list {
+  counter-reset: item;
+  padding-left: 2rem; }
+  .list__item {
+    padding-left: 3.125rem;
+    margin-bottom: 0.5625rem;
+    position: relative;
+    display: block;
+    font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
+    font-weight: 400;
+    font-weight: 300; }
+    .list__item:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: counter(item) ". ";
+      counter-increment: item;
+      font-weight: 700;
+      color: #2A7DFA; }

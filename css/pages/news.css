@@ -1,0 +1,21 @@
+.news {
+  font: normal normal 1.125rem/1.3125rem "Roboto Mono", monospace;
+  font-weight: 400;
+  color: #000000; }
+  .news__title {
+    padding: 0.25rem 0 1.25rem;
+    margin: 0 0 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #2A7DFA;
+    font-weight: 700; }
+  .news__content-item {
+    margin-bottom: 1rem; }
+  .news__rating {
+    margin-top: 1.25rem;
+    margin-left: auto;
+    display: flex;
+    font-weight: 700; }
+    .news__rating-value {
+      margin: 0 0.875rem; }

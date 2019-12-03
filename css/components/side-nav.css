@@ -9,6 +9,7 @@
   height: 100%;
   background-color: #2A7DFA;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  -webkit-transition: width 0.5s;
   transition: width 0.5s; }
   @media screen and (max-width: 800px) {
     .side-nav {
@@ -29,28 +30,39 @@
         width: 100%; } }
   .side-nav__menu {
     padding-top: 0.625rem;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     height: 100%;
     overflow-y: auto; }
     .main-container--opened .side-nav__menu {
-      align-items: flex-start; }
+      -webkit-box-align: start;
+              align-items: flex-start; }
 
 .side-nav-item {
   padding: 1rem 0;
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
   width: 100%;
-  font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   color: #F0F0F0; }
   .main-container--opened .side-nav-item {
     padding-left: 12.62%;
     padding-right: 1rem;
     min-width: 16.875rem;
-    justify-content: flex-start; }
+    -webkit-box-pack: start;
+            justify-content: flex-start; }
   .side-nav-item:not(.side-nav-item--info) {
     color: #F0F0F0; }
     .side-nav-item:not(.side-nav-item--info):hover {
@@ -70,7 +82,8 @@
       top: 1.9375rem;
       left: 50%;
       width: calc(100% - 3.875rem);
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
       border-top: 1px solid #F0F0F0; }
       @media screen and (max-width: 640px) {
         .side-nav-item--delimiter:before {
@@ -99,6 +112,8 @@
       margin-left: 1.25rem; }
     .side-nav-item__label--caption {
       display: block;
-      font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
+      font-family: "Roboto Mono", monospace;
       font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.1875rem;
       font-weight: 500; }

@@ -19,31 +19,66 @@
   outline: -webkit-focus-ring-color auto 5px; }
 
 .field {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
+  -webkit-box-align: center;
+          align-items: center;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   color: #000000; }
 
 .field__wrapper {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  display: -webkit-box;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+          align-items: center; }
 
 .field__input {
   padding: 0 0.75rem;
   border: none;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
   flex-shrink: 2;
   height: 2.625rem;
   min-width: 170px;
   background-color: #FFFFFF;
   box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem; }
-  .field__input::placeholder {
-    font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
+  .field__input::-webkit-input-placeholder {
+    font-family: "Roboto Mono", monospace;
     font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #8E8E8E; }
+  .field__input::-moz-placeholder {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #8E8E8E; }
+  .field__input:-ms-input-placeholder {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #8E8E8E; }
+  .field__input::-ms-input-placeholder {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #8E8E8E; }
+  .field__input::placeholder {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
     color: #8E8E8E; }
   .field__input:disabled {
     padding: 0;
@@ -55,13 +90,16 @@
     height: 3rem; }
   .field__input--empty .field__label {
     margin-right: 0;
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
     flex-shrink: 1; }
     .field__input--empty .field__label:after {
       content: 'не заполнен';
       padding-left: 0.625rem;
-      font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
+      font-family: "Roboto Mono", monospace;
       font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 1.75rem;
       color: #2A7DFA;
       white-space: nowrap; }
   .field__input--empty .field__input {
@@ -73,8 +111,10 @@
   font-weight: 500; }
 
 .error, .success {
-  font: normal 300 1.5rem/1.75rem "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   white-space: nowrap; }
 
 .error {

@@ -4,14 +4,20 @@
     .profile {
       padding-top: 1.875rem; } }
   .profile .page__wrapper {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+            align-items: flex-start;
     max-width: 1176px; }
     @media screen and (max-width: 640px) {
       .profile .page__wrapper {
-        flex-direction: column;
-        justify-content: flex-start; } }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: start;
+                justify-content: flex-start; } }
   .profile .page-block {
     margin-left: -5.8125rem; }
   .profile .page-block__item {
@@ -29,19 +35,24 @@
     display: none;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
     .profile__password--opened {
+      display: -webkit-box;
       display: flex; }
     .profile__password .field__input {
       margin-top: 0.9375rem;
-      flex-grow: 1;
+      -webkit-box-flex: 1;
+              flex-grow: 1;
       max-width: 264px; }
       .profile__password .field__input:last-child {
         margin-right: 0; }
   .profile__title {
     margin: 2.5rem 0 1.25rem;
-    font: normal 300 1.75rem/2.0625rem "Roboto Mono", monospace;
+    font-family: "Roboto Mono", monospace;
     font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2.0625rem;
     font-weight: 700;
     color: #000000; }
   .profile__avatar {

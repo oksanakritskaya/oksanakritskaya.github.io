@@ -1,7 +1,10 @@
 .statistics .field {
-  flex-grow: 0;
-  font: normal normal 1rem/1.1875rem "Roboto Mono", monospace;
-  font-weight: 400; }
+  -webkit-box-flex: 0;
+          flex-grow: 0;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem; }
   .statistics .field__label {
     flex-shrink: 0;
     text-transform: uppercase; }

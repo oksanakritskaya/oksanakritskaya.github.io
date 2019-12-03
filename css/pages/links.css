@@ -4,13 +4,18 @@
 .links__create-link {
   display: none; }
   .links__create-link--opened {
+    display: -webkit-box;
     display: flex; }
 
 .links__created-link {
   display: none;
-  flex-direction: column;
-  align-items: flex-start; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: start;
+          align-items: flex-start; }
   .links__created-link--opened {
+    display: -webkit-box;
     display: flex; }
   .links__created-link .success {
     margin-bottom: 1.375rem; }

@@ -37,14 +37,10 @@
       .profile__info {
         flex-basis: 100%; } }
   .profile__password {
-    display: none;
     width: 100%;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
             justify-content: space-between; }
-    .profile__password--opened {
-      display: -webkit-box;
-      display: flex; }
     .profile__password .field__input {
       margin-top: 0.9375rem;
       -webkit-box-flex: 1;

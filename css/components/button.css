@@ -13,6 +13,11 @@
   border-radius: 4px; }
   .button:hover, .button:active {
     background-color: #75ABFC; }
+  .button--white {
+    color: #000000;
+    background-color: #FFFFFF; }
+    .button--white:hover, .button--white:active {
+      background-color: #F0F0F0; }
   .button--sign {
     padding: 0 1.375rem;
     font-family: "Roboto Mono", monospace;
@@ -27,9 +32,12 @@
     box-shadow: none; }
     .button--icon:hover, .button--icon:active {
       background-color: transparent; }
-  .page__block .button--cross {
+  .note .button--cross {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 40px; }
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 20px;
+    height: 20px; }
+  .button--cross .icon {
+    max-width: 20px;
+    max-height: 20px; }

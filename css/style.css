@@ -409,6 +409,16 @@ body {
   .page .page__wrapper {
     width: 100%;
     max-width: 1380px; }
+  .page__title-wrap {
+    margin-bottom: 2.5rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center; }
+    .page__title-wrap .page__title, .page__title-wrap .text {
+      margin-bottom: 0; }
   .page__title {
     margin-bottom: 2.5rem;
     display: -webkit-box;
@@ -551,6 +561,8 @@ a {
   font-size: 1rem;
   line-height: 1.1875rem;
   color: #000000; }
+  .text--blue {
+    color: #2A7DFA; }
 
 .delimiter {
   padding-right: 1.875rem;
@@ -1382,7 +1394,7 @@ a {
 .rates .page__block {
   width: 100%; }
 
-.referrals .text {
+.referrals__note {
   margin-bottom: 2.5rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;

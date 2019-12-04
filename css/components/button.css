@@ -28,6 +28,8 @@
     line-height: 2.5rem; }
   .button--icon {
     padding: 0;
+    font-size: 0;
+    line-height: 0;
     background-color: transparent;
     box-shadow: none; }
     .button--icon:hover, .button--icon:active {

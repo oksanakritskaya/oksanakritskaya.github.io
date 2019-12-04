@@ -31,6 +31,17 @@
     max-width: 0; }
     .table__cell--number {
       text-align: right; }
-    .table__cell .button--icon {
-      width: 0.8125rem;
-      height: 1.0625rem; }
+    .table__cell--with-icon {
+      padding-left: 25px;
+      position: relative; }
+      .table__cell--with-icon .icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+    .table__cell-content {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+              align-items: center; }

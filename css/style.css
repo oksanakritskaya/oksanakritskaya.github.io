@@ -419,6 +419,8 @@ body {
             align-items: center; }
     .page__title-wrap .page__title, .page__title-wrap .text {
       margin-bottom: 0; }
+    .page__title-wrap .text {
+      font-weight: 700; }
   .page__title {
     margin-bottom: 2.5rem;
     display: -webkit-box;
@@ -431,6 +433,10 @@ body {
     line-height: 2.8125rem;
     font-weight: 700;
     color: #2A7DFA; }
+  .page__title + .page__sub-title {
+    margin-top: 0; }
+  .page__sub-title + .page__sub-title {
+    margin-top: 0; }
   .page__sub-title {
     margin: 2.5rem 0;
     font-family: "Roboto Mono", monospace;
@@ -569,6 +575,8 @@ a {
   display: flex;
   -webkit-box-align: center;
           align-items: center; }
+  .text-wrapper .text + .link {
+    margin-left: 0.5rem; }
 
 .delimiter {
   padding-right: 1.875rem;
@@ -698,6 +706,15 @@ a {
   white-space: nowrap;
   overflow: hidden;
   color: #2A7DFA; }
+
+.capitalize {
+  text-transform: none !important; }
+
+.lowercase {
+  text-transform: lowercase !important; }
+
+.uppercase {
+  text-transform: uppercase !important; }
 
 .button {
   padding: 0.75rem 1.5625rem;
@@ -1249,6 +1266,15 @@ a {
     max-width: 0; }
     .table__cell--number {
       text-align: right; }
+    .table__cell--with-icon {
+      padding-left: 25px;
+      position: relative; }
+      .table__cell--with-icon .icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
     .table__cell-content {
       display: -webkit-box;
       display: flex;
@@ -1443,6 +1469,12 @@ a {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.3125rem; }
+
+.rules .page__title {
+  margin-bottom: 1.25rem; }
+
+.rules .page__sub-title {
+  margin-bottom: 2rem; }
 
 .rules__sub-title {
   margin-bottom: 1.0625rem;

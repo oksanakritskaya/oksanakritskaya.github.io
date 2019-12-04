@@ -238,6 +238,12 @@ a {
   .text--blue {
     color: #2A7DFA; }
 
+.text-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center; }
+
 .delimiter {
   padding-right: 1.875rem;
   position: relative;
@@ -262,6 +268,10 @@ a {
   height: 100%; }
   .icon--round {
     border-radius: 50%; }
+  .icon--copy {
+    padding-left: 0.625rem;
+    max-width: 23px;
+    max-height: 17px; }
 
 .icon-pseudo {
   padding-left: 3.125rem;
@@ -355,9 +365,10 @@ a {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px; }
 
-.text-ellipsis {
+.ellipsis {
   display: inline-block;
-  max-width: calc(99% - 17px);
+  max-width: calc(99% - 23px);
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  color: #2A7DFA; }

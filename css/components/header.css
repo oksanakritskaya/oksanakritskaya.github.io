@@ -113,7 +113,7 @@
   -webkit-box-align: center;
           align-items: center;
   color: #F0F0F0; }
-  .header-nav-item:hover {
+  .header-nav-item:hover, .header-nav-item:active {
     text-decoration: none;
     color: #2A7DFA;
     background-color: #F0F0F0; }
@@ -166,6 +166,9 @@
     top: calc(50% - 3px);
     width: 0;
     left: 50%; }
+  .nav-toggle.active span:nth-child(2), .nav-toggle.active span:nth-child(3) {
+    width: 2.8125rem;
+    left: -0.375rem; }
   .nav-toggle.active span:nth-child(2) {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }

@@ -93,6 +93,8 @@ body {
             align-items: center; }
     .page__title-wrap .page__title, .page__title-wrap .text {
       margin-bottom: 0; }
+    .page__title-wrap .text {
+      font-weight: 700; }
   .page__title {
     margin-bottom: 2.5rem;
     display: -webkit-box;
@@ -105,6 +107,10 @@ body {
     line-height: 2.8125rem;
     font-weight: 700;
     color: #2A7DFA; }
+  .page__title + .page__sub-title {
+    margin-top: 0; }
+  .page__sub-title + .page__sub-title {
+    margin-top: 0; }
   .page__sub-title {
     margin: 2.5rem 0;
     font-family: "Roboto Mono", monospace;
@@ -243,6 +249,8 @@ a {
   display: flex;
   -webkit-box-align: center;
           align-items: center; }
+  .text-wrapper .text + .link {
+    margin-left: 0.5rem; }
 
 .delimiter {
   padding-right: 1.875rem;
@@ -372,3 +380,12 @@ a {
   white-space: nowrap;
   overflow: hidden;
   color: #2A7DFA; }
+
+.capitalize {
+  text-transform: none !important; }
+
+.lowercase {
+  text-transform: lowercase !important; }
+
+.uppercase {
+  text-transform: uppercase !important; }

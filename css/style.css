@@ -519,7 +519,6 @@ a {
   text-decoration: none; }
 
 .note {
-  padding-right: 2.5rem;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -533,6 +532,8 @@ a {
   .note--opened {
     display: -webkit-box;
     display: flex; }
+  .note--cross {
+    padding-right: 2.5rem; }
 
 .link {
   position: relative;
@@ -719,6 +720,7 @@ a {
 .button {
   padding: 0.75rem 1.5625rem;
   border: none;
+  height: 3rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 1.125rem;
@@ -752,7 +754,7 @@ a {
     box-shadow: none; }
     .button--icon:hover, .button--icon:active {
       background-color: transparent; }
-  .note .button--cross {
+  .note--cross .button--cross {
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;
@@ -838,7 +840,7 @@ a {
   -webkit-box-flex: 1;
           flex-grow: 1;
   flex-shrink: 2;
-  height: 2.625rem;
+  height: 3rem;
   min-width: 170px;
   background-color: #FFFFFF;
   box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.25);
@@ -1449,6 +1451,13 @@ a {
       max-width: 476px; }
   .links .form .button {
     margin-left: 1.25rem; }
+
+.payouts .note--cross {
+  padding-right: 2.75rem; }
+
+.payouts .button--cross {
+  top: 1.5rem;
+  right: 1.5rem; }
 
 .rates .page-block {
   margin-left: -2.5rem; }

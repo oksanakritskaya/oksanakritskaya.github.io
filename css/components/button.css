@@ -1,6 +1,7 @@
 .button {
   padding: 0.75rem 1.5625rem;
   border: none;
+  height: 3rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 1.125rem;
@@ -34,7 +35,7 @@
     box-shadow: none; }
     .button--icon:hover, .button--icon:active {
       background-color: transparent; }
-  .note .button--cross {
+  .note--cross .button--cross {
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;

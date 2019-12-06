@@ -193,7 +193,6 @@ a {
   text-decoration: none; }
 
 .note {
-  padding-right: 2.5rem;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -207,6 +206,8 @@ a {
   .note--opened {
     display: -webkit-box;
     display: flex; }
+  .note--cross {
+    padding-right: 2.5rem; }
 
 .link {
   position: relative;

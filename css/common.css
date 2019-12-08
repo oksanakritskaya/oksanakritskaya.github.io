@@ -134,6 +134,14 @@ body {
     background-color: #F0F0F0;
     box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
     border-radius: 0.25rem 0.25rem 0 0; }
+    .page__block--column {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: start;
+              align-items: flex-start; }
+      .page__block--column > * {
+        width: 100%; }
 
 .page-block {
   margin-top: -0.625rem;
@@ -215,7 +223,12 @@ a {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.1875rem;
-  color: #2A7DFA; }
+  color: #2A7DFA;
+  -webkit-box-flex: 0 !important;
+          flex-grow: 0 !important;
+  height: auto !important;
+  background-color: transparent !important;
+  box-shadow: none !important; }
   .link:hover:before {
     content: '';
     position: absolute;

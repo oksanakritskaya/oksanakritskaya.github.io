@@ -19,6 +19,7 @@
   outline: -webkit-focus-ring-color auto 5px; }
 
 .field {
+  z-index: 2;
   -webkit-box-flex: 1;
           flex-grow: 1;
   display: -webkit-box;
@@ -70,13 +71,18 @@
           align-items: center; }
 
 .field__input {
-  padding: 0 0.75rem;
+  padding: 0.8125rem 0.75rem;
   border: none;
   -webkit-box-flex: 1;
           flex-grow: 1;
   flex-shrink: 2;
   height: 3rem;
   min-width: 170px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #000000;
   background-color: #FFFFFF;
   box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem; }
@@ -119,6 +125,8 @@
     min-width: 0;
     width: 100%;
     height: 3rem; }
+  .field__input--textarea {
+    height: 11.875rem; }
 
 .field__label {
   margin-right: 1.25rem;

@@ -1474,26 +1474,70 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column; }
+            flex-direction: column;
+    -webkit-box-align: start;
+            align-items: flex-start; }
     .messages .message__wrap {
       display: -webkit-box;
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
               flex-direction: column;
-      max-width: 50%; }
-    .messages .message--outgoing {
       -webkit-box-align: start;
-              align-items: flex-start; }
-      .messages .message--outgoing .message__wrap {
-        -webkit-box-align: start;
-                align-items: flex-start; }
+              align-items: flex-start;
+      max-width: 50%; }
+      @media screen and (max-width: 900px) {
+        .messages .message__wrap {
+          max-width: 60%; } }
+      @media screen and (max-width: 640px) {
+        .messages .message__wrap {
+          max-width: 70%; } }
+      @media screen and (max-width: 420px) {
+        .messages .message__wrap {
+          max-width: 80%; } }
+    .messages .message__user {
+      margin-bottom: 0.875rem;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.3125rem;
+      color: #2A7DFA; }
+    .messages .message__message {
+      padding: 1.25rem;
+      position: relative;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 400;
+      font-size: 0.9375rem;
+      line-height: 1.125rem;
+      color: #000000;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      background-color: #FFFFFF; }
+      .messages .message__message:before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 0.3125rem;
+        border-left: 0.3125rem solid transparent;
+        border-right: 0.625rem solid transparent;
+        border-bottom: 0.625rem solid #FFFFFF; }
     .messages .message--incoming {
       -webkit-box-align: end;
               align-items: flex-end; }
       .messages .message--incoming .message__wrap {
         -webkit-box-align: end;
                 align-items: flex-end; }
+      .messages .message--incoming .message__message {
+        color: #F0F0F0;
+        background-color: #2A7DFA; }
+        .messages .message--incoming .message__message:before {
+          left: auto;
+          right: 0.3125rem;
+          border-left: 0.625rem solid transparent;
+          border-right: 0.3125rem solid transparent;
+          border-bottom: 0.625rem solid #2A7DFA; }
+  .messages__response {
+    margin-top: 1.25rem; }
 
 .payouts .note--cross {
   padding-right: 2.75rem; }

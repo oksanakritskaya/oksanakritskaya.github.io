@@ -9,8 +9,6 @@
   color: #000000; }
   .table--without-total .table__body .table__row:last-child {
     border-color: transparent; }
-  .table__head, .table__body {
-    padding: 0 1.25rem; }
   .table__head {
     color: #2A7DFA;
     text-transform: uppercase; }
@@ -45,3 +43,16 @@
       display: flex;
       -webkit-box-align: center;
               align-items: center; }
+      .table__cell-content .button--icon {
+        margin-right: 1.25rem; }
+  .table--flex .table__row-messages--opened {
+    margin: 0 -1.25rem;
+    padding: 0 1.25rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); }
+  .table--flex .table__row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+  .table--flex .table__cell {
+    max-width: 100%; }

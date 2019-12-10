@@ -36,6 +36,10 @@
     box-shadow: none; }
     .button--icon:hover, .button--icon:active {
       background-color: transparent; }
+  .button--copy {
+    width: 0.8125rem;
+    height: 1.0625rem;
+    margin-left: 0.625rem; }
   .note--cross .button--cross {
     position: absolute;
     top: 1.25rem;

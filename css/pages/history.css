@@ -6,6 +6,8 @@
   line-height: 1.3125rem; }
 
 .history__form {
+  display: none;
+  overflow: hidden;
   position: relative; }
   .history__form:before, .history__form:after {
     content: '';
@@ -13,14 +15,13 @@
     position: absolute;
     background-repeat: no-repeat; }
   .history__form:before {
-    z-index: 5;
-    top: 7.875rem;
-    left: 0;
-    width: 3.75rem;
+    top: 7.25rem;
+    left: -2.6875rem;
+    width: 8.9375rem;
     height: 8.9375rem;
     background-image: url("../../images/sprite.svg#question-small"); }
   .history__form:after {
-    top: -0.625rem;
+    top: 0;
     right: 0.9375rem;
     width: 13.6875rem;
     height: 14.375rem;
@@ -31,7 +32,7 @@
   max-width: 85%; }
 
 .history .field__label {
-  margin-right: 0;
+  margin-right: 0.625rem;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 1rem;

@@ -1,5 +1,5 @@
 .side-nav {
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,9 +60,15 @@
   .main-container--opened .side-nav-item {
     padding-left: 12.62%;
     padding-right: 12.62%;
-    min-width: 16.875rem;
     -webkit-box-pack: start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+    width: 21.964vw; }
+    @media screen and (max-width: 800px) {
+      .main-container--opened .side-nav-item {
+        width: 25.84vw; } }
+    @media screen and (max-width: 640px) {
+      .main-container--opened .side-nav-item {
+        width: 100%; } }
   .side-nav-item:not(.side-nav-item--info) {
     color: #F0F0F0; }
     .side-nav-item:not(.side-nav-item--info).side-nav-item--active {

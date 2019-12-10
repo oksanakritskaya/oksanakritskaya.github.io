@@ -4,3 +4,8 @@
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.3125rem; }
+
+.referrals .page-block {
+  margin-left: -0.625rem; }
+  .referrals .page-block > * {
+    padding-left: 0.625rem; }

@@ -4,3 +4,24 @@
 .payouts .button--cross {
   top: 1.5rem;
   right: 1.5rem; }
+
+.payouts__table {
+  min-width: 400px; }
+
+.payouts__date {
+  width: 20%; }
+
+.payouts__purse {
+  width: 40%; }
+
+.payouts__sum {
+  width: 10%; }
+
+.payouts__status {
+  width: 30%; }
+
+@media screen and (max-width: 640px) {
+  .payouts__purse {
+    width: 30%; }
+  .payouts__sum {
+    width: 20%; } }

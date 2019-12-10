@@ -40,3 +40,23 @@
       max-width: 476px; }
   .links .form .button {
     margin-left: 1.25rem; }
+
+.links__table {
+  min-width: 450px; }
+
+.links__short-link {
+  width: 20%; }
+
+.links__link {
+  width: 70%; }
+
+.links__profit {
+  width: 10%; }
+
+@media screen and (max-width: 800px) {
+  .links__short-link {
+    width: 30%; }
+  .links__link {
+    width: 50%; }
+  .links__profit {
+    width: 20%; } }

@@ -1,6 +1,12 @@
 .statistics .page-block__item {
   flex-wrap: nowrap; }
 
+.statistics__table {
+  min-width: 730px; }
+
+.statistics .table__cell--hovered:hover .tooltip:after, .statistics .table__cell--hovered:hover .tooltip__text {
+  display: inline; }
+
 .statistics .field {
   -webkit-box-flex: 0;
           flex-grow: 0;
@@ -11,6 +17,3 @@
   .statistics .field__label {
     flex-shrink: 0;
     text-transform: uppercase; }
-
-.statistics .table__cell--hovered:hover .tooltip:after, .statistics .table__cell--hovered:hover .tooltip__text {
-  display: inline; }

@@ -5,340 +5,77 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reduce Me</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap" rel="stylesheet">
+    <title>Эльфель</title>
+    <link rel="icon" href="favicon.svg" sizes="16x16">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<main class="main">
     <header class="header">
-    <div class="header__nav-toggle">
-        <button class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-    <div class="header__content">
-        <a href="/" class="header-item header-item--logo">
-            <img src="images/logo.svg" alt="logo" class="header-item__logo">
-            <span class="header-item__name">Reduce Me</span>
-        </a>
-        <div class="header-item header--item--balance">
-            <svg class="icon">
-                <use xlink:href="images/sprite.svg#balance"></use>
-            </svg>
-            <b class="header-item__label">Баланс: </b>
-            <p class="header-item__value">
-                <span class="delimiter">1000 <b class="currency">rub</b></span>1000 <b class="currency">usd</b>
-            </p>
-        </div>
-        <nav class="header__nav header-item">
-            <a href="#" class="header-nav-item">
-                <svg class="icon">
-                    <use xlink:href="images/sprite.svg#support"></use>
-                </svg>
-                <span class="header-item__label">Служба поддержки</span>
-            </a>
-            <div class="header-nav-item header-nav-item--list">
-                <a href="#" class="header-item link-hover delimiter">
-                    <svg class="icon">
-                        <use xlink:href="images/sprite.svg#rus"></use>
-                    </svg>
-                    <span class="header-item__label">Рус</span>
+        <div class="header__content container">
+            <div class="header__logo">
+                <a class="logo" href="/">
+                    <h1>Эль<span>фель</span></h1>
                 </a>
-                <a href="#" class="header-item link-hover">
-                    <svg class="icon">
-                        <use xlink:href="images/sprite.svg#eng"></use>
-                    </svg>
-                    <span class="header-item__label">Eng</span>
+                <p class="header__hint hint">Более 200 реализованных проектов</p>
+            </div>
+
+            <div class="header__phone">
+                <p class="hint">Приём заявок без перерывов и выходных</p>
+                <a href="tel:+79969383396" class="link">
+                    +7 (996) 938-33-96
                 </a>
             </div>
-            <a href="#" class="header-item header-nav-item">
-                <svg class="icon">
-                    <use xlink:href="images/sprite.svg#login"></use>
-                </svg>
-                <span class="header-item__label">Выход</span>
-            </a>
-        </nav>
-    </div>
-</header>
+        </div>
+    </header>
+    <div class="container--flex-column container">
+        <div class="main__header">
+            <h3 class="main__header--second">в Томске и области</h3>
+            <h2 class="main__header--first">Ремонт и отделка квартир под ключ</h2>
+            <h3 class="main__header--mark">Без предоплаты. В короткие сроки</h3>
+        </div>
 
-<main class="main main-container">
-    <div class="side-nav">
-    <nav class="side-nav__menu">
-        <p class="side-nav-item side-nav-item--info">
-            <img src="images/avatar.png" alt="avatar" class="side-nav-item__img">
-            <span class="side-nav-item__label user-login user-login--vip">Seo-Login</span>
-        </p>
-        <a href="statistics.html" class="side-nav-item side-nav-item--active">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#statistics"></use>
-            </svg>
-            <span class="side-nav-item__label">Статистика</span>
-        </a>
-        <a href="links.html" class="side-nav-item">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#links"></use>
-            </svg>
-            <span class="side-nav-item__label">Мои ссылки</span>
-        </a>
-        <a href="rates.html" class="side-nav-item">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#rates"></use>
-            </svg>
-            <span class="side-nav-item__label">Тарифы</span>
-        </a>
-        <a href="payouts.html" class="side-nav-item">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#payouts"></use>
-            </svg>
-            <span class="side-nav-item__label">Выплаты</span>
-        </a>
-        <a href="referrals.html" class="side-nav-item">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#referrals"></use>
-            </svg>
-            <span class="side-nav-item__label">Рефералы</span>
-        </a>
-        <a href="news.html" class="side-nav-item">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#news"></use>
-            </svg>
-            <span class="side-nav-item__label">Новости</span>
-        </a>
-        <a href="rules.html" class="side-nav-item">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#rules"></use>
-            </svg>
-            <span class="side-nav-item__label">Правила</span>
-        </a>
-        <a href="history.html" class="side-nav-item">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#history"></use>
-            </svg>
-            <span class="side-nav-item__label">История обращений</span>
-        </a>
+        <div class="main__info">
+            <div class="main-info">
+                <div class="main-info__ad">
+                    <div class="main-info-ad">
+                        <p class="main-info-ad__name">Укладка плитки</p>
+                        <p class="main-info-ad__price">от 700 руб/м2</p>
+                    </div>
 
-        <p class="side-nav-item side-nav-item--info side-nav-item--delimiter">
-            <img src="images/avatar.png" alt="" class="side-nav-item__img">
-            <span class="side-nav-item__label">Иван
-            <small class="side-nav-item__label--caption">Ваш менеджер</small></span>
-        </p>
-        <a href="tg://resolve?domain=reduceme" class="side-nav-item">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#telegram"></use>
-            </svg>
-            <span class="side-nav-item__label">@reduceme</span>
-        </a>
-        <a href="mailto: admin@rdce.me" class="side-nav-item">
-            <svg class="side-nav-item__img">
-                <use xlink:href="images/sprite.svg#mail"></use>
-            </svg>
-            <span class="side-nav-item__label">admin@rdce.me</span>
-        </a>
-    </nav>
-</div>
-
-    <div class="profile page">
-    <div class="page__wrapper">
-        <div class="page-block page-block--start">
-            <div class="page-block__item page-block__item--column">
-                <div class="page__block">
-                    <p class="field__label user-login">
-                        <span class="user-login--vip">Seo-Login</span>
-                    </p>
-                    <button class="button" type="button" id="changePassword">Сменить пароль</button>
-                    <form class="profile__password note">
-                        <input class="field__input" type="password" placeholder="Старый пароль">
-                        <input class="field__input" type="password" placeholder="Новый пароль">
-                        <input class="field__input" type="password" placeholder="Подтверждение пароля">
-                    </form>
+                    <div class="switches">
+                        <input class="switches__button" type="radio" id="1" name="ad" value="1" checked>
+                        <input class="switches__button" type="radio" id="2" name="ad" value="2">
+                        <input class="switches__button" type="radio" id="3" name="ad" value="3">
+                        <input class="switches__button" type="radio" id="4" name="ad" value="4">
+                    </div>
                 </div>
-
-                <h3 class="profile__title">Контакты</h3>
-
-                <form class="page__block">
-                    <div class="page-block">
-                        <p class="field page-block__item">
-                            <label class="field__label" for="mail">Почта:</label>
-                            <input class="field__input" type="email" id="mail" disabled value="reduce@reduceme.ru" placeholder="введите новый">
-                        </p>
-                        <div class="page-block__item">
-                            <span class="status status--error">не подтверждена</span>
-                        </div>
+                <form class="main-info__form form">
+                    <div class="form__header form-header">
+                        <p class="form-header__main">Оставьте заявку</p>
+                        <p class="form-header__mark">на бесплатный выезд замерщика и расчет сметы</p>
                     </div>
-                </form>
 
-                <form class="page__block">
-                    <div class="page-block">
-                        <p class="field page-block__item">
-                            <label class="field__label" for="tel">Telegram:</label>
-                            <input class="field__input" type="text" id="tel" placeholder="введите новый">
-                        </p>
-                        <div class="page-block__item">
-                            <button class="button" type="submit">Сменить</button>
-                        </div>
-                    </div>
-                </form>
+                    <input type="text" class="form__input" placeholder="Ваше имя" required>
+                    <input type="tel" class="form__input" placeholder="Номер телефона"
+                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
-                <h3 class="profile__title">Кошельки</h3>
-
-                <form class="page__block">
-                    <div class="page-block">
-                        <p class="field field--empty page-block__item">
-                            <label class="field__label icon-pseudo icon-pseudo--wm" for="wm">Webmoney:</label>
-                            <input class="field__input" type="email" id="wm" placeholder="введите новый" disabled>
-                        </p>
-                        <div class="page-block__item">
-                            <button class="button" type="submit">Привязать</button>
-                        </div>
-                    </div>
+                    <input class="form__button" type="button" value="Отправить">
                 </form>
-
-                <form class="page__block">
-                    <div class="page-block">
-                        <p class="field page-block__item">
-                            <label class="field__label icon-pseudo icon-pseudo--qiwi" for="qiwi">Qiwi:</label>
-                            <input class="field__input" type="text" id="qiwi" placeholder="введите номер">
-                        </p>
-                        <div class="page-block__item">
-                            <button class="button" type="submit">Привязать</button>
-                        </div>
-                    </div>
-                </form>
-
-                <form class="page__block">
-                    <div class="page-block">
-                        <p class="field page-block__item">
-                            <label class="field__label icon-pseudo icon-pseudo--ym" for="ym">YandexMoney:</label>
-                            <input class="field__input" type="text" id="ym" disabled value="9999999999" placeholder="введите номер">
-                        </p>
-                        <div class="page-block__item">
-                            <button class="button" type="submit">Привязать</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="page-block__item page-block__item--column">
-                <div class="profile__avatar-content">
-                    <img class="profile__photo" src="images/avatar.png" alt="avatar">
-                </div>
-                <input type="file" name="file" id="file" class="inputfile" />
-                <label for="file" class="button">Сменить аватар</label>
             </div>
         </div>
+
+        <!--<div class="main__content">
+            <ul class="main-content__list">
+                <li class="main-content__item text-regular">Гарантия</li>
+                <li class="main-content__item text-regular">Бесплатный расчет стоимости</li>
+                <li class="main-content__item text-regular">Поэтапная оплата</li>
+                <li class="main-content__item text-regular">Официальный договор</li>
+            </ul>
+        </div>-->
     </div>
-</div>
 </main>
-
+<!--<footer>footer</footer>-->
 </body>
 </html>
-
-<script>
-    'use strict';
-
-    const burger = document.body.querySelector('.nav-toggle');
-    const changePassword = document.body.querySelector('#changePassword');
-    const createLink = document.body.querySelector('#createLink');
-    const form = document.body.querySelector('.links__create-link');
-    const payoutsButton = document.body.querySelector('#payoutsButton');
-    const messagesButton1 = document.body.querySelector('#messagesButton1');
-    const messagesButton2 = document.body.querySelector('#messagesButton2');
-    const historyTable = document.body.querySelector('.history__table');
-    const historyButton = document.body.querySelector('#historyButton');
-
-    burger.addEventListener('click', function () {
-        burger.classList.toggle('active');
-
-        const main = document.body.querySelector('.main-container');
-        main.classList.toggle('main-container--opened');
-    });
-
-    if(changePassword) {
-        changePassword.addEventListener('click', function () {
-            const form = document.body.querySelector('.profile__password');
-            form.classList.toggle('note--opened');
-        });
-    }
-
-    if(createLink) {
-        const form = document.body.querySelector('.links__create-link');
-        const createButton = document.body.querySelector('#createButton');
-
-        createLink.addEventListener('click', function () {
-            form.classList.toggle('note--opened');
-
-            createLink.style.display = "none";
-        });
-
-        if(createButton) {
-            const crossButton = document.body.querySelector('#crossButton');
-            const currentForm = document.body.querySelector('.links__created-link');
-
-            createButton.addEventListener('click', function () {
-                currentForm.classList.toggle('note--opened');
-
-                form.style.display = "none";
-            });
-
-            if(crossButton) {
-                crossButton.addEventListener('click', function () {
-                    createLink.style.display = "flex";
-                    currentForm.style.display = "none";
-                });
-            }
-        }
-    }
-
-    if(payoutsButton) {
-        const form = document.body.querySelector('.payouts__form');
-        const note = document.body.querySelector('.payouts__note');
-
-        payoutsButton.addEventListener('click', function () {
-            note.classList.toggle('note--opened');
-            form.style.display = "none";
-        });
-
-        const payoutsCloseButton = document.body.querySelector('#payoutsCloseButton');
-
-        payoutsCloseButton.addEventListener('click', function () {
-            note.classList.toggle('note--opened');
-            form.style.display = "flex";
-        });
-    }
-
-    messagesButton1.addEventListener('click', function () {
-        const messages = document.body.querySelector('#messages1');
-        messages.classList.toggle('table__row-messages--opened');
-    });
-
-    messagesButton2.addEventListener('click', function () {
-        const messages = document.body.querySelector('#messages2');
-        messages.classList.toggle('table__row-messages--opened');
-    });
-
-    historyButton.addEventListener('click', function () {
-        const note = document.body.querySelector('.history__note');
-        if(note) {
-            note.style.display = "none";
-        }
-
-        const form = document.body.querySelector('.history__form');
-        const historyCreateButton = document.body.querySelector('#historyCreateButton');
-
-        historyTable.style.display = "none";
-        form.style.display = "flex";
-
-        historyCreateButton.addEventListener('click', function () {
-            form.style.display = "none";
-            note.style.display = "block";
-
-            historyTable.style.display = "flex";
-        });
-    });
-</script>
